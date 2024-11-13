@@ -1,0 +1,402 @@
+@font-face {
+  font-family: 'URW Palladio L';
+  src: url('fonts/URW Palladio L.ttf') format('truetype');
+}
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white; /* fundo da tela*/
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding-top: 170px;
+}
+header {
+  background-color: black; 
+  color: black;
+  padding: 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  text-align: center;
+  align-items: center;
+  display: flex; 
+  justify-content: space-between;
+  flex-direction: row;
+  font-family: 'URW Palladio L';
+  src: url('fonts/URW Palladio L.ttf') format('truetype');
+}
+
+footer{
+  text-size-adjust: 100x;
+  text-align: center;
+}
+/*Deixa a escrita dos HTML/link rente a borda*/
+nav ul {
+  display: flex; 
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center; 
+}
+
+/*Escrita dos HTML/link no topo formato de escrita*/
+nav li {
+  margin-right: 30px;
+}
+/*Escrita dos HTML/link no topo*/
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'URW Palladio L', sans-serif; 
+  font-size: 20px; 
+  padding: 10px; 
+  transition: color 0.3s; 
+}
+
+nav a:hover {
+  color: #f46cd0; /* Altera a cor ao passar o mouse */
+}
+/*tamanho do site*/
+main {
+  padding: 20px;
+  
+}
+section {
+  background-color: #f5d7d7;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* leve sombra */
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  color: black;
+  font-size: 1.2em;
+  font-family: "Armata", sans-serif;
+  src: url('fonts/URW Palladio L.ttf') format('truetype');
+  position: relative;
+}
+section h2 {
+  text-align: center;
+}
+h2 {
+  font-family: "Lilita One", sans-serif;
+  color: #f46cd0; /* Subtitulo em negrito */
+}
+section h1 {
+  text-align: left;
+}
+h1 {
+  color: #f46cd0; /* Subtitulo em negrito */
+}
+
+#Início {
+  background-color: #f5d7d7; 
+
+  padding: 40px 0;
+}
+.Inicio-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align-last: center;
+}
+/* Slider carrossel */
+/* body {
+  margin: 0%;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+.slider {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  img {
+    width: 100%;
+    height: 90%;
+  }
+
+  .indicators {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .indicator {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .indicator.active {
+    background-color: #717171;
+  }
+
+  @media (max-width: 600px) {
+    .indicator {
+        width: 10px;
+        height: 10px;
+    }
+  }
+  /* asdas */
+  .custom-btn {
+    position: absolute; /* Muda para absolute */
+    bottom: 250px; /* Ajuste a posição vertical */
+    left: 20px; /* Ajuste a posição horizontal */
+    background-color: #ffffff; /* Cor do botão */
+    color: white; /* Cor do texto */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 10; /* Para garantir que o botão fique acima da imagem */
+}
+  .btn-16 {
+    border: none;
+    color: #000;
+  }
+  .btn-16:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    direction: rtl;
+    z-index: -1;
+    box-shadow:
+    2px -1px 20px 0px #ffffff99,
+    -4px -4px 5px 0px #ffffff99,
+    7px 7px 20px 0px #002dd422,
+    7px 7px 5px 0px #2d00e211;
+   transition: all 0.3s ease;
+  }
+  .btn-16:hover {
+    color: #000;
+  }
+  .btn-16:hover:after {
+    left: auto;
+    right: 0;
+    width: 100%;
+  }
+  .btn-16:active {
+    top: 115px;
+  }
+
+/* Fim do slider carrossel */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+}
+/*fim do pop-up da manicure*/
+/* Edição da logo*/ /*colocar a logo do lado do titulo*/
+.imagemlogo {
+  display: flex; 
+  justify-content: flex-start; 
+  align-items: center; 
+  width: 100%; 
+}
+.imagemlogo img {
+  max-width: 150px; 
+  height: auto; 
+  margin: 0; 
+}
+.Mapa {
+  width: 100%; 
+  height: 400px; 
+  overflow: hidden; 
+  position: relative; 
+}
+.Mapa iframe {
+  width: 100%; 
+  height: 100%; 
+  border: 0; 
+  position: absolute; 
+  top: 0;
+  left: 0;
+}
+
+#Contato a {
+  color: #f46cd0;
+  text-decoration: none;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#Contato svg {
+  color: #f46cd0;
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+.dropdown-content {
+  display: none; /* Oculto inicialmente */
+  padding: 10px;
+  z-index: 10;
+  width: 100%;
+  margin-top: 10px;
+  
+    
+}
+
+.dropdown-content img{
+  width: 50%;
+  max-width: 200px;
+  height: auto;
+  margin: 5px;
+  display: block;
+  
+}
+
+.dropdown-content.open {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.img-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15%;
+}
+
+.img-txt img{
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+.img-txt p {
+  text-align: center;
+  margin: 0;
+}
+
+/*rodapé*/
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+  color: #fff;
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    color: #f46cd0;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-section .social a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.footer-section .social img {
+    width: 24px;
+    height: 24px;
+    filter: invert(1);
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    font-size: 0.8em;
+}
+/*estilização do rodapé */
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000; /* Cor de fundo do rodapé */
+  color: white; /* Cor do texto */
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+  z-index: 10;
+  
+}
+
+/* Alterar a cor dos ícones */
+a svg {
+  color: #fff; /* Escolha a cor desejada aqui */
+}
+
+
+/* Adiciona margem no final do conteúdo para que não ficar sobre o rodapé */
+main {
+  margin-bottom: 5px; /* Ajuste essa margem conforme necessário */
+}

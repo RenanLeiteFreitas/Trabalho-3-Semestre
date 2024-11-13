@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'URW Palladio L';
+    src: url('fonts/URW Palladio L.ttf') format('truetype');
+  }
+
+h1{
+  font-size: 20px;
+}
+.padrao{
+  width:  400px;
+  display: inline-block;
+  padding: 10px;
+  margin-left: 10px;
+  text-align: center; 
+}
+img {
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.servico {
+  text-align: center;
+}
